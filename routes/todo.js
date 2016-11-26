@@ -74,7 +74,6 @@ router.delete('/:userid', (req, res) => {
 
 router.get("/:userid/edit", (req, res) => {
   Todo.getById(req).then((todo) => {
-    console.log(todo)
     res.format({
       html: function(){
         res.render("todo/edit", {todo: todo});

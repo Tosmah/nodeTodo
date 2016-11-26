@@ -1,7 +1,7 @@
 {% extends '../index.twig' %}
 {% block content %}
 <h2>Edit Todo</h2>
-	<form method="POST" action="/todo/{{todo.rowid}}/edit?_method="PUT"">
+	<form method="POST" action="/todo/{{todo.rowid}}?_method=PUT">
 		<table class="table-fill">
 			<tr>
 				<td class="label">
@@ -21,10 +21,10 @@
 			</tr>
 			<tr>
 				<td class="label">
-					<label for="priorite">Status : </label>
+					<label for="status">Status : </label>
 				</td>
 				<td>
-					<input type="text" class="status" value="{{todo.status}}" name="status" id="status">
+					<input type="checkbox" class="status" {% if todo.status == 1 %} checkbox = "checked" value = "1" {% else %}{% endif %} name="status" id="status">
 				</td>
 			</tr>
 			<tr>
@@ -42,4 +42,7 @@
 			</tr>
 		</form>
 	</table>
+	<script>
+
+	</script>
 	{% endblock %}
