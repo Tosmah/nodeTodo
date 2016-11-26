@@ -1,0 +1,95 @@
+body {
+  background-color: #c9cfd8;
+  font: 1.2em "Gochi Hand", cursive;
+  color: #181819;
+  cursor: url(/img/cursors/png/click-gesture-1.png) 4 12, auto;
+}
+
+h1, h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  margin: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  border: 1px solid #181819;
+  padding: 5px;
+}
+
+li a {
+  color: #181819;
+}
+
+.formButton {
+  display: inline-block;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  padding: 0.4em 0.25em;
+  width: 100%;
+  background: transparent;
+  color: #6e727a;
+  font: 1.2em "Gochi Hand", cursive;
+  border-bottom: 1px dashed #4a4b4c;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 3px;
+}
+
+input[type="submit"], button {
+  padding: 0.4em 0.25em;
+  background: transparent;
+  color: #181819;
+  font: 1.2em "Gochi Hand", cursive;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 3px;
+}
+
+input[type="submit"]:disabled, button:disabled {
+  padding: 0.4em 0.25em;
+  background: transparent;
+  color: #6e727a;
+  font: 1.2em "Gochi Hand", cursive;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 3px;
+  text-decoration: line-through;
+  cursor: url(/img/cursors/png/click-gesture-1.png);
+}
+
+.submit {
+  text-align: center;
+}
+
+.inputOk {
+  border-bottom: 1px dashed green !important;
+  text-shadow: 1px 1px 9px green;
+}
+
+.inputKo {
+  border-bottom: 1px dashed red !important;
+  text-shadow: 1px 1px 9px red;
+}
+
+.label {
+  text-align: right;
+}
+
+table {
+  margin: auto;
+}
